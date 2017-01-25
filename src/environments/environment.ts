@@ -6,4 +6,5 @@
 export const environment = {
   production: false
   ,urlSite: 'https://brservicos.info/'
+  ,pastaSite: '/'
 };

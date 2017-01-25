@@ -8,16 +8,25 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent }   from './app.component';
 
 import 'hammerjs';
+import { MenuComponent } from './layout/menu/menu.component';
+import { ConfigComponent } from './admin/config/config.component';
+import { IndexComponent } from './index/index.component';
+
+import { environment } from '../environments/environment';
+import { routing } from './app.routes';
+import { ListarChavesComponent } from './listar-chaves/listar-chaves.component';
+import { AlterarChavesComponent } from './alterar-chaves/alterar-chaves.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MenuComponent, ConfigComponent, IndexComponent, ListarChavesComponent, AlterarChavesComponent],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    routing 
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/my/app'}],
+  providers: [{provide: APP_BASE_HREF, useValue: environment.pastaSite}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
