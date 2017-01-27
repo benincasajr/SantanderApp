@@ -1,14 +1,15 @@
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
+import { LoginComponent } from './admin/login.component';
 import { ConfigComponent } from './admin/config/config.component';
-import { IndexComponent } from './index/index.component';
-import { ListarChavesComponent } from './listar-chaves/listar-chaves.component';
-import { AlterarChavesComponent } from './alterar-chaves/alterar-chaves.component';
+import { ListarComponent } from './token/listar/listar.component';
+import { TokenComponent } from './token/token/token.component';
 
 const appRoutes: Routes  = [
-  { path: '', component: IndexComponent },
+  { path: '', component: LoginComponent },
   { path: 'Configuracoes', component: ConfigComponent },
-  { path: 'Chaves', component: ListarChavesComponent },
-  { path: 'Alterar', component: AlterarChavesComponent },
+  { path: 'ListarTokens', component: ListarComponent },
+  { path: 'Token', component: TokenComponent },
   { path: '**', redirectTo: ''}
 ];
 

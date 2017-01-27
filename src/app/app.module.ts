@@ -4,27 +4,32 @@ import { FormsModule }    from '@angular/forms';
 import { HttpModule }     from '@angular/http';
 import { APP_BASE_HREF }    from '@angular/common';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@angular/material';
 import { AppComponent }   from './app.component';
 
 import 'hammerjs';
-import { MenuComponent } from './layout/menu/menu.component';
+
+import { LoginComponent } from './admin/login.component';
 import { ConfigComponent } from './admin/config/config.component';
-import { IndexComponent } from './index/index.component';
+import { MenuComponent } from './layout/menu/menu.component';
+
+import { ListarComponent } from './token/listar/listar.component';
+import { TokenComponent } from './token/token/token.component';
+
 
 import { environment } from '../environments/environment';
 import { routing } from './app.routes';
-import { ListarChavesComponent } from './listar-chaves/listar-chaves.component';
-import { AlterarChavesComponent } from './alterar-chaves/alterar-chaves.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, ConfigComponent, IndexComponent, ListarChavesComponent, AlterarChavesComponent],
+  declarations: [AppComponent, LoginComponent, MenuComponent, ListarComponent, ConfigComponent, ListarComponent, TokenComponent],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
-    routing 
+    FlexLayoutModule.forRoot(),
+    routing
   ],
   providers: [{provide: APP_BASE_HREF, useValue: environment.pastaSite}],
   bootstrap: [AppComponent]

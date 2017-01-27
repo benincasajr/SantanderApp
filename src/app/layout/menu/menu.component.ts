@@ -9,8 +9,8 @@ export class MenuComponent implements OnInit {
 
   itensMenu   =  [
                     {link:'Home',rota:'/'},
-                    {link:'Chaves',rota:'/Chaves'},
-                    {link:'Alteração',rota:'/Alterar'},
+                    {link:'Tokens',rota:'/ListarTokens'},
+                    {link:'Adicionar',rota:'/Token'},
                     {link:'Configurações',rota:'/Configuracoes'}
                 ];
 

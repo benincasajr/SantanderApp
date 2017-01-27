@@ -1,8 +1,10 @@
 <!-- aplicacao -->
-<ul>
-    <li *ngFor="let itemMenu of itensMenu">
-        <a [routerLink]="[(itemMenu.rota)]" class="btn btn-primary">
-            {{itemMenu.link}}
-        </a>
-    </li>
-</ul>
+<nav>
+    <ul>
+        <li *ngFor="let itemMenu of itensMenu">
+            <a [routerLink]="[itemMenu.rota]" class="btn btn-primary">
+                {{itemMenu.link}}
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { AlterarChavesComponent } from './alterar-chaves.component';
+import { TokenComponent } from './token.component';
 
-describe('AlterarChavesComponent', () => {
-  let component: AlterarChavesComponent;
-  let fixture: ComponentFixture<AlterarChavesComponent>;
+describe('TokenComponent', () => {
+  let component: TokenComponent;
+  let fixture: ComponentFixture<TokenComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlterarChavesComponent ]
+      declarations: [ TokenComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AlterarChavesComponent);
+    fixture = TestBed.createComponent(TokenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
