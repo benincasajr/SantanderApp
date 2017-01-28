@@ -1,0 +1,16 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+}
+
+.menu nav{
+    padding: 0;
+}
+
+.menu a{
+    padding: 5px 0;
+    text-decoration: none;
+}

@@ -1,5 +1,17 @@
+md-sidenav-container{
+  display: flex;
+}
+md-sidenav-layout{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
 md-sidenav-layout.m2app-dark {
   background: black;
+}
+
+md-sidenav-layout > div {
+  
 }
 
 .app-content {
