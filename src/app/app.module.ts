@@ -7,11 +7,11 @@ import { APP_BASE_HREF }    from '@angular/common';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 
 export const firebaseConfig = {
-  apiKey: 'AIzaSyAh7K2CEWwDhnDV1p4SAWC3IlaHzxnF9lA',
-  authDomain: 'brservicosinfo-8dabf.firebaseapp.com',
-  databaseURL: 'https://brservicosinfo-8dabf.firebaseio.com',
-  storageBucket: 'brservicosinfo-8dabf.appspot.com',
-  messagingSenderId: '633561780643'
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  storageBucket: '',
+  messagingSenderId: ''
 };
 
 export const myFirebaseAuthConfig = {
