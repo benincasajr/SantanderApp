@@ -4,6 +4,21 @@ import { FormsModule }    from '@angular/forms';
 import { HttpModule }     from '@angular/http';
 import { APP_BASE_HREF }    from '@angular/common';
 
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
+
+export const firebaseConfig = {
+  apiKey: 'AIzaSyAh7K2CEWwDhnDV1p4SAWC3IlaHzxnF9lA',
+  authDomain: 'brservicosinfo-8dabf.firebaseapp.com',
+  databaseURL: 'https://brservicosinfo-8dabf.firebaseio.com',
+  storageBucket: 'brservicosinfo-8dabf.appspot.com',
+  messagingSenderId: '633561780643'
+};
+
+export const myFirebaseAuthConfig = {
+  provider: AuthProviders.Google,
+  method: AuthMethods.Redirect
+};
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '@angular/material';
 import { AppComponent }   from './app.component';
@@ -29,6 +44,7 @@ import { routing } from './app.routes';
     HttpModule,
     MaterialModule.forRoot(),
     FlexLayoutModule.forRoot(),
+    AngularFireModule.initializeApp(firebaseConfig, myFirebaseAuthConfig),
     routing
   ],
   providers: [{provide: APP_BASE_HREF, useValue: environment.pastaSite}],

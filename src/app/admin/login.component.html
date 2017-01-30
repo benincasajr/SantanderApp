@@ -1,5 +1,5 @@
-<div>
-    <div>bloco 1</div>
-    <div>bloco 2</div>
-    <div>bloco 3</div>
-</div> 
+<div id="containerLogin">
+    <div *ngIf="(af.auth | async)?.uid"><img src="{{(af.auth | async)?.google.photoURL}}">.</div>
+    <button class="btn btnGoogle" (click)="login()" *ngIf="!(af.auth | async)">Login Google</button>
+    <button class="btn btnLogout" (click)="logout()" *ngIf="(af.auth | async)">Logout</button>
+</div>

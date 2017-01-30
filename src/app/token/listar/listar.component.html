@@ -1,3 +1,7 @@
-<p>
-  listar works!
-</p>
+<h1>
+    {{titulo}}
+</h1>
+
+<div id="listagem">
+  <button *ngFor="let iToken of tokens" (click)="informaToken(iToken.token, iToken.valor)">{{iToken.token}}</button>
+</div>

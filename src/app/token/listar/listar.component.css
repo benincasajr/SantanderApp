@@ -1,0 +1,8 @@
+h1{
+    text-align: center;
+}
+#listagem {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}

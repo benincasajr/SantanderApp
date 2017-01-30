@@ -1,0 +1,19 @@
+#containerLogin{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn {
+    width: 120px;
+    height: 30px;
+    border: 0px;
+}
+.btnLogout{
+    color: #fff;
+    background-color: #e55252;
+}
+.btnGoogle{
+    color: #fff;
+    background-color: #4c8ffb;
+    
+}

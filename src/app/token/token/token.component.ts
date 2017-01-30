@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-token',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TokenComponent implements OnInit {
 
-  constructor() { }
+  @Input() token: number;
+  @Input() valor: number;
+  _id: string;
 
   ngOnInit() {
   }
